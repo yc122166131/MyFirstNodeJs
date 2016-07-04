@@ -1,0 +1,62 @@
+<%-layout('layout/layout')%>  <!--根据views目录开始找-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="panel">
+        <div class="header" >
+          <ul class="breadcrumb">
+            <li><a href="#">首页<span class="divider"></span></a></li>
+            <li><a href="#">注册</a></li>
+          </ul>
+        </div>
+        <div class="inner">
+          <form class="form-horizontal" role="form" id="signup_form" action="/signup" method="post">
+            <div class="form-group">
+              <label for="loginname" class="col-sm-2 control-label">用户名</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="loginname"
+                       placeholder="请输入用户名......">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="pass" class="col-sm-2 control-label">密码</label>
+              <div class="col-sm-9">
+                <input type="password" class="form-control" id="pass"
+                       placeholder="请输入密码......">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="confirm_pass" class="col-sm-2 control-label">确认密码</label>
+              <div class="col-sm-9">
+                <input type="password" class="form-control" id="confirm_pass"
+                       placeholder="请再次输入密码......">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-sm-2 control-label">电子邮箱</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="email"
+                       placeholder="请输入电子邮箱">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-7 col-sm-2">
+                <input class="btn btn-primary form-control" type="submit" value="提交"/>
+              </div>
+              <div class="col-sm-2">
+                <input class="btn btn-info form-control" type="reset" value="重置"/>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4  hidden-xs hidden-sm">
+
+      <%-partial('layout/sideBar')%>
+    </div>
+  </div>
+
+
+</div>
